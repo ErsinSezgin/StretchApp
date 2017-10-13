@@ -68,6 +68,7 @@
 
         <EditText
             android:id="@+id/repetition_edit_text"
+            style="@android:style/Widget.Material.EditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="40dp"
@@ -75,6 +76,7 @@
             android:width="50dp"
             android:height="50dp"
             android:ems="10"
+            android:gravity="center_horizontal"
             android:inputType="number"
             android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -82,6 +84,7 @@
 
         <EditText
             android:id="@+id/stretch_text"
+            style="@android:style/Widget.Material.EditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="40dp"
@@ -89,6 +92,7 @@
             android:width="50dp"
             android:height="50dp"
             android:ems="10"
+            android:gravity="center_horizontal"
             android:inputType="number"
             android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -96,6 +100,7 @@
 
         <EditText
             android:id="@+id/rest_time_edit_text"
+            style="@android:style/Widget.Material.EditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="40dp"
@@ -103,6 +108,7 @@
             android:width="50dp"
             android:height="50dp"
             android:ems="10"
+            android:gravity="center_horizontal"
             android:inputType="number"
             android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -114,16 +120,20 @@
             android:layout_height="50dp"
             android:layout_marginEnd="40dp"
             android:layout_marginTop="50dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/repetition_edit_text" />
 
         <ImageButton
             android:id="@+id/start_button"
+            style="@android:style/Widget.Material.ImageButton"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginEnd="40dp"
             android:layout_marginStart="40dp"
             android:layout_marginTop="40dp"
+            android:background="#ff5C6C3F"
+            android:backgroundTint="#ff384819"
             android:src="@android:drawable/ic_media_play"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

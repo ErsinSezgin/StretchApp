@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Stretch App</string>
+    <string name="app_name">Stretch Timer</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_settings">Settings</string>
