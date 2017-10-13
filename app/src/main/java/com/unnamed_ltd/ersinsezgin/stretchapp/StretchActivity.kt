@@ -18,12 +18,6 @@ class StretchActivity : AppCompatActivity() {
     lateinit var secondTV : AppCompatTextView
     lateinit var messageTV : AppCompatTextView
     lateinit var progressBar : ProgressBar
-//    val schedules: List<Schedule> = listOf(
-//        Schedule("Right Side", 5),
-//        Schedule("Rest", 5),
-//        Schedule("Left Side", 5),
-//        Schedule("Finished", 0)
-//    )
     lateinit var schedules: MutableList<Schedule>
     var seconds: Int = 0 // amount of seconds left for current workout
     var cursor: Int = 0 //index of the current workout
@@ -81,7 +75,7 @@ class StretchActivity : AppCompatActivity() {
     }
 
     fun stopCount(){
-        secondTV.text = "Done!"
+        secondTV.text = ""
         timer.cancel()
         // Update UI and finish workout
     }
@@ -97,7 +91,7 @@ class StretchActivity : AppCompatActivity() {
                 list.add(Schedule("Left Side", duration))
                 list.add(Schedule("Rest", rest))
             } else {
-                list.add(Schedule("Flex", duration))
+                list.add(Schedule("Stretch", duration))
                 list.add(Schedule("Rest", rest))
             }
         }
