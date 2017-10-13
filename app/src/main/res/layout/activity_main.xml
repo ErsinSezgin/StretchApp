@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="600dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.unnamed_ltd.ersinsezgin.stretchapp.MainActivity">
+
+        <TextView
+            android:id="@+id/rest_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:height="50dp"
+            android:gravity="center"
+            android:text="@string/rest_time"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rest_time_edit_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rest_time_edit_text" />
+
+        <TextView
+            android:id="@+id/stretch_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:height="50dp"
+            android:gravity="center"
+            android:text="@string/stretch_time"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/stretch_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/stretch_text" />
+
+        <TextView
+            android:id="@+id/switch_sides_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:height="50dp"
+            android:gravity="center"
+            android:text="@string/switch_sides"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toggleButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toggleButton" />
+
+        <TextView
+            android:id="@+id/repetitions_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:height="50dp"
+            android:gravity="center"
+            android:text="@string/repetitions"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/repetition_edit_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/repetition_edit_text" />
+
+        <EditText
+            android:id="@+id/repetition_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="10dp"
+            android:width="50dp"
+            android:height="50dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/stretch_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="50dp"
+            android:width="50dp"
+            android:height="50dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+        <EditText
+            android:id="@+id/rest_time_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="50dp"
+            android:width="50dp"
+            android:height="50dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stretch_text" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repetition_edit_text" />
+
+        <ImageButton
+            android:id="@+id/start_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:src="@android:drawable/ic_media_play"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rest_time_edit_text" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
+

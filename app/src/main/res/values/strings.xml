@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Stretch App</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_settings">Settings</string>
+    <string name="repetitions">Repetitions</string>
+    <string name="switch_sides">Switch Sides</string>
+    <string name="stretch_time">Stretch Time</string>
+    <string name="rest_time">Rest Time</string>
+</resources>
